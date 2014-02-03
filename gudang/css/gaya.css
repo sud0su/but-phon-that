@@ -1,0 +1,110 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	width: 1020px;
+	margin: 20px auto;
+	color: #000;
+	font-size: .85em;
+	font-family: "Segoe UI", Tahoma, Arial, Verdana;
+}
+
+.column {
+	width: 100%;
+	padding: 10px;
+}
+
+.column-left {
+	float: left;
+	width: 230px;
+}
+
+.content {
+	border: 1px solid #B6B6B6;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #eee;
+	height: 70%;
+	padding: 10px;
+}
+
+.column-right {
+	float: left;
+	width: 780px;
+	margin-left: 10px;
+}
+
+/*------button filter------*/
+.filter {
+	margin-bottom: 5px;
+}
+
+.box-filter {
+	font-weight: lighter;
+	float: left;
+	padding-top: 5px;
+}
+
+.label {
+	padding-top:8px;
+	width: 80px;
+	float: left;
+}
+
+#chart {
+	float: right;
+	margin-top: -44px;
+}
+
+#cetak {
+	float: right;
+	margin-top: -44px;
+}
+
+.ui-button .ui-button-text {
+	display: block;
+	line-height: 0.9em;
+	font-size: 12px;
+	font-weight: bold;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.ui-button-text-only .ui-button-text {
+	padding: .3em 1em;
+}
+
+/*------tabs------*/
+.ui-tabs .ui-tabs-nav {
+	padding-top: 3px;
+	background: #ededed url(aristo/images/bg_fallback.png) 0 0 repeat-x;
+	background: -moz-linear-gradient(top, #ededed 0%, #c4c4c4 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ededed),
+		color-stop(100%, #c4c4c4));
+	background: -webkit-linear-gradient(top, #ededed 0%, #c4c4c4 100%);
+	background: -o-linear-gradient(top, #ededed 0%, #c4c4c4 100%);
+	background: -ms-linear-gradient(top, #ededed 0%, #c4c4c4 100%);
+	background: linear-gradient(top, #ededed 0%, #c4c4c4 100%);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+}
+
+.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default {
+	border: 1px solid #B6B6B6;
+}
+
+label {
+    position: relative;
+    display: inline-block;
+}
+
+select {
+    display: inline-block;
+    padding: 4px 3px 5px 5px;
+    outline: none;
+    color: #74646e;
+    border: 1px solid #C8BFC4;
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 2px #BDBD82;
+    background-color: #E7E7E7;        
+}
