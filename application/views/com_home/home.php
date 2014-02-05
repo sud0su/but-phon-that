@@ -4,7 +4,7 @@
 			<div class="content">
 			
 				<div class="box-filter">
-					<div class="label">Periode</div>
+					<div class="label">Periode</div> 
 					<div id="btnShowViolenceTypeItem"
 						class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary filter"
 						role="button" aria-disabled="false">

@@ -2,7 +2,7 @@
 
 class c_base extends CI_Controller {
 
-	public function index()
+	public function index() 
 	{
 		$data['component'] = 'com_home/home';
 		$this->load->view('index',$data);
