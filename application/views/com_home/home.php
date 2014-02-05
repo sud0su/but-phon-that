@@ -90,7 +90,7 @@
 							<span class="ui-button-text">Cetak PDF</span>
 						</label> 
 					</div>
-						<p>asdasda sda sd a sda sd asd</p>
+						<p>Halaman Home</p>
 					</div>
 					<div id="tabs-2">
 					<div id="chart" style="display: block;" class="ui-buttonset">
