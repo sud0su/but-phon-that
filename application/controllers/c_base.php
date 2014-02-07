@@ -7,15 +7,10 @@ class c_base extends CI_Controller {
 		$this->load->view('index',$data);
 	}
 	
-	public function kabview()
+	public function view_kab()
 	{
-		$data['component'] = 'com_kab/kab_view';
+		$data['component'] = 'com_kab/view';
 		$this->load->view('index',$data);
 	}
 	
-	public function kabviewinput()
-	{
-		$data['component'] = 'com_kab/kab_view_input';
-		$this->load->view('index',$data);
-	}
 }
