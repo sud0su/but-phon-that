@@ -6,4 +6,16 @@ class c_base extends CI_Controller {
 		$data['component'] = 'com_home/home';
 		$this->load->view('index',$data);
 	}
+	
+	public function kabview()
+	{
+		$data['component'] = 'com_kab/kab_view';
+		$this->load->view('index',$data);
+	}
+	
+	public function kabviewinput()
+	{
+		$data['component'] = 'com_kab/kab_view_input';
+		$this->load->view('index',$data);
+	}
 }
