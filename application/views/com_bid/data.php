@@ -6,27 +6,27 @@
 			<th>action</th>
 		</tr>
 		<tr>
-			<td class="bottom">1</td>
-			<td class="heading">Bidang Kesehata</td>
-			<td valign="heading">Badan Kepegawaian Daerah</td>
-			<td valign="heading"></td>
+			<td class="heading">1</td>
+			<td valign="bottom">Bidang Kesehata</td>
+			<td valign="bottom">Badan Kepegawaian Daerah</td>
+			<td valign="bottom"></td>
 		</tr>
 		<tr>
-			<td class="bottom">2</td>
-			<td class="heading">Bidang Ekonomi</td>
-			<td valign="heading">Badan Kepegawaian Daerah</td>
-			<td valign="heading"></td>
+			<td class="heading">2</td>
+			<td valign="bottom">Bidang Ekonomi</td>
+			<td valign="bottom">Badan Kepegawaian Daerah</td>
+			<td valign="bottom"></td>
 		</tr>
 		<tr>
-			<td class="bottom">3</td>
-			<td class="heading">Bidang Anak</td>
-			<td valign="heading">Badan Kepegawaian Daerah</td>
-			<td valign="heading"></td>
+			<td class="heading">3</td>
+			<td valign="bottom">Bidang Anak</td>
+			<td valign="bottom">Badan Kepegawaian Daerah</td>
+			<td valign="bottom"></td>
 		</tr>
 		<tr>
-			<td class="bottom">4</td>
-			<td class="heading">Bidang Ibu</td>
-			<td valign="heading">Badan Kepegawaian Daerah</td>
-			<td valign="heading"></td>
+			<td class="heading">4</td>
+			<td valign="bottom">Bidang Ibu</td>
+			<td valign="bottom">Badan Kepegawaian Daerah</td>
+			<td valign="bottom"></td>
 		</tr>
 	</table>
