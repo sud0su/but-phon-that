@@ -10,6 +10,13 @@
 						class="ui-button-text">Beranda</span>
 				</div>
 				
+				<div id="pro"
+					class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary menu"
+					role="button" aria-disabled="false">
+					<span class="ui-button-icon-primary ui-icon ui-icon-document"></span><span
+						class="ui-button-text">Propinsi</span>
+				</div>
+				
 				<div id="kab"
 					class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary menu"
 					role="button" aria-disabled="false">
@@ -17,18 +24,25 @@
 						class="ui-button-text">Kabupaten</span>
 				</div>
 				
-				<div id="kec"
-					class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary menu"
-					role="button" aria-disabled="false">
-					<span class="ui-button-icon-primary ui-icon ui-icon-document"></span><span
-						class="ui-button-text">Kecamatan</span>
-				</div>
-				
 				<div id="ins"
 					class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary menu"
 					role="button" aria-disabled="false">
 					<span class="ui-button-icon-primary ui-icon ui-icon-document"></span><span
 						class="ui-button-text">Instansi</span>
+				</div>
+				
+				<div id="bid"
+					class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary menu"
+					role="button" aria-disabled="false">
+					<span class="ui-button-icon-primary ui-icon ui-icon-document"></span><span
+						class="ui-button-text">Bidang</span>
+				</div>
+				
+				<div id="kas"
+					class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary menu"
+					role="button" aria-disabled="false">
+					<span class="ui-button-icon-primary ui-icon ui-icon-document"></span><span
+						class="ui-button-text">Kasus</span>
 				</div>
 				
 				<!-- end button menu -->

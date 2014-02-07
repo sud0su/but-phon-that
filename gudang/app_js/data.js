@@ -7,12 +7,19 @@ $(document).ready(function(){
 	$('div#kab').on('click',function(){
 		kabupaten();
 	});	
-	$('div#kec').on('click',function(){
-		kecamatan();
+	$('div#pro').on('click',function(){
+		propinsi();
 	});
 	$('div#ins').on('click',function(){
 		instansi();
-	});	
+	});
+	$('div#bid').on('click',function(){
+		bidang();
+	});
+	$('div#kas').on('click',function(){
+		kasus();
+	});
+
 });
 
 $(window).bind("load", function() {
@@ -41,10 +48,10 @@ function kabupaten(){
 	});
 };
 
-function kecamatan(){
+function propinsi(){
 	$.ajax({
         type: "POST",
-        url : BASE_URL+"c_base/view_kec",
+        url : BASE_URL+"c_base/view_pro",
         contentType: "application/x-www-form-urlencoded; charset=UTF-8",
         success: function(data){
         	 	$('#data').html(data);
@@ -61,4 +68,26 @@ function instansi(){
         	 	$('#data').html(data);
         }
 	});
-}
+};
+
+function bidang(){
+	$.ajax({
+        type: "POST",
+        url : BASE_URL+"c_base/view_bid",
+        contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+        success: function(data){
+        	 	$('#data').html(data);
+        }
+	});
+};
+
+function kasus(){
+	$.ajax({
+        type: "POST",
+        url : BASE_URL+"c_base/view_kasus",
+        contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+        success: function(data){
+        	 	$('#data').html(data);
+        }
+	});
+};

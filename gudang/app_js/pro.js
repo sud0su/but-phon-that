@@ -1,5 +1,5 @@
 $(document).on('ready',function(){
-	table_kab();
+	table_ins();
 	
 	$('button.tambah').on('click',function(){
 		tambah();
@@ -11,10 +11,10 @@ $(window).bind("load", function() {
     $('#loading').fadeOut(2000);
 });
 
-function table_kab(){
+function table_ins(){
 	$.ajax({
         type: "POST",
-        url : BASE_URL+"c_base/table_kab",
+        url : BASE_URL+"c_base/table_pro",
         contentType: "application/x-www-form-urlencoded; charset=UTF-8",
         success: function(data){
         	 	$('#dataTable').html(data);
@@ -23,8 +23,8 @@ function table_kab(){
 }
 
 function tambah(){
-	$('#tambahKabupaten').dialog({
-		title : 'Form Tambah Data Kabupaten',
+	$('#tambahPropinsi').dialog({
+		title : 'Form Tambah Data Propinsi',
 		width : 'auto',
 		height : 'auto',
 		cache : false,

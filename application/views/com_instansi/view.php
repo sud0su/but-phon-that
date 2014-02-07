@@ -10,13 +10,7 @@
 	<div id="tambahInstansi" style="display:none;" class="dialog_window">
 	    <label>Nama Instansi</label>
 	    <input type="text" id="instansi"><br>
-	    <label>Nama Instansi</label>
+	    <label>Alamat</label>
 	    <input type="text" id="instansi"><br>
-	    <label>Nama Instansi</label>
-	    <input type="text" id="instansi"><br>
-	    <label>Nama Instansi</label>
-	    <input type="text" id="instansi"><br>
-	    <label>Nama Instansi</label>
-	    <input type="text" id="instansi">
 	</div>
 <script src="gudang/app_js/instansi.js"></script>

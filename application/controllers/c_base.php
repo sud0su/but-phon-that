@@ -19,9 +19,9 @@ class c_base extends CI_Controller {
 		$this->load->view('index',$data);
 	}
 	
-	public function view_kec()
+	public function view_pro()
 	{
-		$data['component'] = 'com_kec/view';
+		$data['component'] = 'com_pro/view';
 		$this->load->view('index',$data);
 	}
 	
@@ -30,6 +30,19 @@ class c_base extends CI_Controller {
 		$data['component'] = 'com_instansi/view';
 		$this->load->view('index',$data);
 	}
+	
+	public function view_bid()
+	{
+		$data['component'] = 'com_bid/view';
+		$this->load->view('index',$data);
+	}
+	
+	public function view_kasus()
+	{
+		$data['component'] = 'com_kasus/view';
+		$this->load->view('index',$data);
+	}
+	
 
 	public function table_kab()
 	{
@@ -37,15 +50,27 @@ class c_base extends CI_Controller {
 		$this->load->view('index',$data);
 	}
 
-	public function table_kec()
+	public function table_pro()
 	{
-		$data['component'] = 'com_kec/data';
+		$data['component'] = 'com_pro/data';
 		$this->load->view('index',$data);
 	}
 
 	public function table_ins()
 	{
 		$data['component'] = 'com_instansi/data';
+		$this->load->view('index',$data);
+	}
+	
+	public function table_bid()
+	{
+		$data['component'] = 'com_bid/data';
+		$this->load->view('index',$data);
+	}
+	
+	public function table_kasus()
+	{
+		$data['component'] = 'com_kasus/data';
 		$this->load->view('index',$data);
 	}
 	
