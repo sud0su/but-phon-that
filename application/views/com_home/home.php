@@ -3,18 +3,32 @@
 		<div class="content">
 			<div class="box-filter">
 				<!-- button menu -->
+				<div id="home"
+					class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary menu"
+					role="button" aria-disabled="false">
+					<span class="ui-button-icon-primary ui-icon ui-icon-document"></span><span
+						class="ui-button-text">Beranda</span>
+				</div>
+				
 				<div id="kab"
-					class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary"
+					class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary menu"
 					role="button" aria-disabled="false">
 					<span class="ui-button-icon-primary ui-icon ui-icon-document"></span><span
 						class="ui-button-text">Kabupaten</span>
 				</div>
 				
-				<div style="margin-top:5px;" id="kec"
-					class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary"
+				<div id="kec"
+					class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary menu"
 					role="button" aria-disabled="false">
 					<span class="ui-button-icon-primary ui-icon ui-icon-document"></span><span
 						class="ui-button-text">Kecamatan</span>
+				</div>
+				
+				<div id="ins"
+					class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary menu"
+					role="button" aria-disabled="false">
+					<span class="ui-button-icon-primary ui-icon ui-icon-document"></span><span
+						class="ui-button-text">Instansi</span>
 				</div>
 				
 				<!-- end button menu -->
@@ -24,9 +38,11 @@
 
 	<div class="column-right">
 		<div class="content">
-			<!-- load data -->
-			<div id="data"></div>
-			<!-- end load data -->
+				<!-- load data -->
+				<div id="data">
+					<div id="loading"></div>
+				</div>
+				<!-- end load data -->
 		</div>
 	</div>
 </div>

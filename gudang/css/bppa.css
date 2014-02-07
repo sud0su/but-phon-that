@@ -8,6 +8,14 @@ body {
 	font-family: "Segoe UI", Tahoma, Arial, Verdana;
 }
 
+#loading {
+	background:url(../gambar/loading.gif) no-repeat center center;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.3;
+}
+
 .column {
 	width: 100%;
 	padding: 10px;
@@ -25,13 +33,28 @@ body {
 	border-radius: 3px;
 	background-color: #eee;
 	height: 70%;
-	padding: 10px;
+	padding: 5px;
 }
 
 .column-right {
 	float: left;
 	width: 780px;
 	margin-left: 10px;
+}
+
+.data-content {
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #C8BFC4;
+	background-color:#fff;
+	padding:10px;
+}
+
+.menu{
+	width: 150px;
+	margin-bottom: 5px;
+	text-align: left;
 }
 
 /*------button filter------*/
@@ -67,6 +90,7 @@ body {
 	font-size: 12px;
 	font-weight: bold;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+	text-align: left;
 }
 
 .ui-button-text-only .ui-button-text {

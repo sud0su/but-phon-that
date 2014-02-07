@@ -1,3 +1,3 @@
 <div class="data-content">
-	view kabupaten
+	view instansi
 </div>

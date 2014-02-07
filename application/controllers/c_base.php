@@ -7,9 +7,27 @@ class c_base extends CI_Controller {
 		$this->load->view('index',$data);
 	}
 	
+	public function view_tab()
+	{
+		$data['component'] = 'com_content/isi';
+		$this->load->view('index',$data);
+	}
+
 	public function view_kab()
 	{
 		$data['component'] = 'com_kab/view';
+		$this->load->view('index',$data);
+	}
+	
+	public function view_kec()
+	{
+		$data['component'] = 'com_kec/view';
+		$this->load->view('index',$data);
+	}
+	
+	public function view_ins()
+	{
+		$data['component'] = 'com_instansi/view';
 		$this->load->view('index',$data);
 	}
 	
