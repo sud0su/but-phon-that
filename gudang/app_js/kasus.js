@@ -14,7 +14,7 @@ $(window).bind("load", function() {
 function table_kasus(){
 	$.ajax({
         type: "POST",
-        url : BASE_URL+"c_base/table_bid",
+        url : BASE_URL+"c_base/table_kasus",
         contentType: "application/x-www-form-urlencoded; charset=UTF-8",
         success: function(data){
         	 	$('#dataTable').html(data);
