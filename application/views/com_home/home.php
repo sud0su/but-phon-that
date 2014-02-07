@@ -46,6 +46,4 @@
 		</div>
 	</div>
 </div>
-
-
 <script src="gudang/app_js/data.js"></script>

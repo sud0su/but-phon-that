@@ -1,0 +1,30 @@
+<table>
+	<thead>
+		<tr>
+			<th>No</th>
+			<th>Nama Instansi</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>Oprekan</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>YPBM</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>AITRD</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>KPLI</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>Bungker</td>
+		</tr>
+	</tbody>
+</table>

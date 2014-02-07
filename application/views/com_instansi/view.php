@@ -1,14 +1,22 @@
 <div class="data-content">
-	<form id="v_instansi">
-		<label>	Nama Instansi</label>
-		<input type="text" id="instansi" /><br>
-		<label>	Nama Instansi</label>
-		<input type="text" id="instansi" /><br>
-		<label>	Nama Instansi</label>
-		<input type="text" id="instansi" /><br>
-		<label>	Nama Instansi</label>
-		<input type="text" id="instansi" /><br>
-		
-		<button id="simpan" type="button">Simpan</button>
-	</form>
+	
+	<button type="button" class="tambah">Tambah Data</button>
+	
+	<div id="dataTable">
+		<div id="loading"></div>
+	</div>	
 </div>
+
+	<div id="tambahInstansi" style="display:none;" class="dialog_window">
+	    <label>Nama Instansi</label>
+	    <input type="text" id="instansi"><br>
+	    <label>Nama Instansi</label>
+	    <input type="text" id="instansi"><br>
+	    <label>Nama Instansi</label>
+	    <input type="text" id="instansi"><br>
+	    <label>Nama Instansi</label>
+	    <input type="text" id="instansi"><br>
+	    <label>Nama Instansi</label>
+	    <input type="text" id="instansi">
+	</div>
+<script src="gudang/app_js/instansi.js"></script>

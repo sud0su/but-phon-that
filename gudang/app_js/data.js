@@ -3,24 +3,20 @@ $(document).ready(function(){
 	
 	$('div#home').on('click',function(){
 		tabs_data();
-	});
-	
+	});	
 	$('div#kab').on('click',function(){
 		kabupaten();
-	});
-	
+	});	
 	$('div#kec').on('click',function(){
 		kecamatan();
 	});
-
 	$('div#ins').on('click',function(){
 		instansi();
-	});
-	
+	});	
 });
 
 $(window).bind("load", function() {
-    $('#dvLoading').fadeOut(2000);
+    $('#loading').fadeOut(2000);
 });
 
 function tabs_data(){
