@@ -8,7 +8,7 @@
 </div>
 
 	<div id="tambahBidang" style="display:none;" class="dialog_window">
-	    <label>Nama Bidang</label>
+	    <label> Nama Bidang</label>
 	    <input type="text" id="namabidang"><br>
 	    <label>Bagian</label>
 	    <input type="text" id="bagian"><br>

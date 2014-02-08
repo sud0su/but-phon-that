@@ -1,3 +1,8 @@
+<div id="header" class="ui-widget-header" style="margin-bottom:2px;"> 
+	<a href="#" class="">
+		<img src="gudang/gambar/logo.png" width="50" height="50" alt="" /></a> 
+		<tr><span class="ui-accordion-header">e-Kekerasan</span></tr>
+</div>
 <div class="column">
 	<div class="column-left">
 		<div class="content">
@@ -59,5 +64,10 @@
 				<!-- end load data -->
 		</div>
 	</div>
+<div id="footer"></div>
+	</div>
+
+<div align=center> 
+	<a href='#'>Copy Right@eKekerasan</a>
 </div>
 <script src="gudang/app_js/data.js"></script>

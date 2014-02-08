@@ -10,4 +10,3 @@
 <script>var BASE_URL = 'http://localhost/si_kekerasan/but-phon-that/';</script>
 </head>
 <body>
- 
