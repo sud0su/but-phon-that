@@ -4,7 +4,7 @@ class c_base extends CI_Controller {
 	
 	function __construct(){
 		parent::__construct();
-		$this->load->model('m_provinsi');
+		$this->load->model(array('m_provinsi','m_kabupaten','m_instansi','m_bidang','m_kasus'));
 	}
 	
 	public function index() 
@@ -52,30 +52,35 @@ class c_base extends CI_Controller {
 
 	public function table_kab()
 	{
+		$data['kabupaten'] = $this->m_kabupaten->getData();
 		$data['component'] = 'com_kab/data';
 		$this->load->view('index',$data);
 	}
 
 	public function table_pro()
 	{
+		$data['provinsi'] = $this->m_provinsi->getData();
 		$data['component'] = 'com_pro/data';
 		$this->load->view('index',$data);
 	}
 
 	public function table_ins()
 	{
+		$data['instansi'] = $this->m_instansi->getData();
 		$data['component'] = 'com_instansi/data';
 		$this->load->view('index',$data);
 	}
 	
 	public function table_bid()
 	{
+		$data['bidang'] = $this->m_bidang->getData();
 		$data['component'] = 'com_bid/data';
 		$this->load->view('index',$data);
 	}
 	
 	public function table_kasus()
 	{
+		$data['kasus'] = $this->m_kasus->getData();
 		$data['component'] = 'com_kasus/data';
 		$this->load->view('index',$data);
 	}

@@ -11,7 +11,7 @@ $(window).bind("load", function() {
     $('#loading').fadeOut(2000);
 });
 
-function table_ins(){
+function table_pro(){
 	$.ajax({
         type: "POST",
         url : BASE_URL+"c_base/table_pro",
@@ -44,6 +44,7 @@ function tambah(){
 					alert ('Nama Provinsi belum diisi');
 				} else {
 					simpanProvinsi(prov, namaprov);
+					$(this).dialog('close');
 				}
 			},
 			'Close': function() { $(this).dialog('close'); }
@@ -63,6 +64,7 @@ function simpanProvinsi(prov, namaprov){
 		data: { prov: sprov, namaprov: snamaprov},
 		success: function(data) {
 			alert(data);
+			table_pro();
 		}
 	})
 };

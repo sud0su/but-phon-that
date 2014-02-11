@@ -1,22 +1,24 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class c_provinsi extends CI_Controller {
+class c_kabupaten extends CI_Controller {
 	function __construct(){
 		parent::__construct();
-		$this->load->model('m_provinsi');
+		$this->load->model(array('m_provinsi','m_kabupaten'));
 	}
 	
 	public function simpan()
 	{
-		$kode_prov = $this->input->post('prov');
-		$nama_prov = $this->input->post('namaprov');
+		$kode_prov = $this->input->post('kdprov');
+		$kode_kab = $this->input->post('kdkab');
+		$nama_kab = $this->input->post('namakab');
 		
 		$data = array (
 			"kd_prov" => $kode_prov,
-			"nama_prov" => $nama_prov
+			"kd_kab" => $kode_kab,
+			"nama_kab" => $nama_kab
 		);
 		
-		$simpanData = $this->m_provinsi->save($data);
+		$simpanData = $this->m_kabupaten->save($data);
 		if ($simpanData){
 			echo 'Data berhasil disimpan';
 		} else {

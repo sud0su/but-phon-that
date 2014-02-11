@@ -35,8 +35,47 @@ function tambah(){
 	    position: ['center',40],
 		modal : true,
 		buttons: {
+			'Simpan': function() {
+				var kdprov = $('#kdprov').val();
+				var kdkab = $('#kdkab').val();
+				var kdins = $('#kdins').val();
+				var kdbid = $('#kdins').val();
+				var namabid = $('#namabid').val();
+				if (kdprov == ''){
+					alert('Kode kabupaten belum diisi');
+				} else if(kdkab == ''){
+					alert ('Kode Kabupaten belum diisi');
+				} else if(kdins == ''){
+					alert ('Kode Instansi belum diisi');
+				} else if(kdbid == ''){
+					alert ('Kode BIdang belum diisi');
+				} else if(namabid == ''){
+					alert ('Nama Bidang belum diisi');
+				} else {
+					simpanBidang(kdprov, kdkab, kdins, kdbid, namabid);
+					$(this).dialog('close');
+				}
+			},
 			'Close': function() { $(this).dialog('close'); }
 		},
 		resizable: false
 	});
-}
+};
+
+function simpanBidang(kdprov,kdkab,kdins,kdbid, namabid){
+	var skdprov= kdprov;
+	var skdkab= kdkab;
+	var skdins= kdins; 
+	var skdbid= kdbid;
+	var snama= namabid;
+	
+	$.ajax({
+		type: 'POST',
+		url: BASE_URL+'c_bidang/simpan',
+		data: {kdprov:skdprov, kdkab:skdkab, kdins:skdins, kdbid:skdbid, kdbid:skdbid, namabid:snamabid},
+		success: function(data) {
+			alert(data);
+			table_bid();
+		}
+	})
+};

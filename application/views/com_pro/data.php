@@ -1,26 +1,17 @@
 <table id="TheTable" border="1" class="ExcelTable2007" width="100%">
 		<tr>
 			<th class="heading" width="20px"></th>
-			<th>Nomor Propinsi</th>
+			<th>Kode Propinsi</th>
 			<th>Nama Propinsi</th>
-			<th>Action</th>
+			<th></th>
 		</tr>
+		
+		<?php $no = '1'; foreach ($provinsi->result() as $prov):?>
 		<tr>
-			<td class="heading">1</td>
-			<td valign="bottom">001</td>
-			<td valign="bottom">Propisi Aceh</td>
+			<td class="heading"><?php echo $no++;?></td>
+			<td valign="bottom"><?php echo $prov->kd_prov; ?></td>
+			<td valign="bottom"><?php echo $prov->nama_prov; ?></td>
 			<td valign="bottom"></td>
 		</tr>
-		<tr>
-			<td class="heading">2</td>
-			<td valign="bottom">002</td>
-			<td valign="bottom">Propinsi Sumut</td>
-			<td valign="bottom"></td>
-		</tr>
-		<tr>
-			<td class="heading">3</td>
-			<td valign="bottom">003</td>
-			<td valign="bottom">Propinsi Pekan Baru</td>
-			<td valign="bottom"></td>
-		</tr>
+		<?php endforeach;?>
 	</table>
