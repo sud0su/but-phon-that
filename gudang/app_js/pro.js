@@ -1,5 +1,5 @@
 $(document).on('ready',function(){
-	table_ins();
+	table_pro();
 	
 	$('button.tambah').on('click',function(){
 		tambah();
@@ -35,8 +35,34 @@ function tambah(){
 	    position: ['center',40],
 		modal : true,
 		buttons: {
+			'Simpan': function() {
+				var prov = $('#nopro').val();
+				var namaprov = $('#namapro').val();
+				if (prov == ''){
+					alert('Kode provinsi belum diisi');
+				} else if(namaprov == ''){
+					alert ('Nama Provinsi belum diisi');
+				} else {
+					simpanProvinsi(prov, namaprov);
+				}
+			},
 			'Close': function() { $(this).dialog('close'); }
 		},
 		resizable: false
 	});
-}
+};
+
+function simpanProvinsi(prov, namaprov){
+	var sprov = prov;
+	var snamaprov = namaprov;
+	//alert(snamaprov);
+	
+	$.ajax({
+		type: 'POST',
+		url: BASE_URL+'c_provinsi/simpan',
+		data: { prov: sprov, namaprov: snamaprov},
+		success: function(data) {
+			alert(data);
+		}
+	})
+};
