@@ -14,6 +14,7 @@
 		    $query = $this->db->query('select * from master.m_provinsi');
 		    foreach ($query->result() as $dt){
 		    ?>
+		    	<option value="">- Pilih -</option>
 		    	<option value="<?php echo $dt->kd_prov ?>"><?php echo $dt->nama_prov ?></option>
 		    <?php } ?>
 	    </select>
