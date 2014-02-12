@@ -14,8 +14,8 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://192.168.43.202/si_kekerasan/but-phon-that/';
-//$config['base_url']	= 'http://localhost/si_kekerasan/but-phon-that/';
+/*$config['base_url']	= 'http://192.168.43.202/si_kekerasan/but-phon-that/';*/
+$config['base_url']	= 'http://localhost/si_kekerasan/but-phon-that/';
 
 /*
 |--------------------------------------------------------------------------

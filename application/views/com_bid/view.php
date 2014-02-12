@@ -19,7 +19,7 @@
 	    </select>
 	    <br>
 	    
-	    <label>Provinsi</label>
+	    <label>Kabupaten</label>
 	    <select id="kdkab">
 		    <?php 
 		    $query = $this->db->query('select * from master.m_kabupaten');
@@ -30,7 +30,7 @@
 	    </select>
 	    <br>
 	    
-	    <label>Provinsi</label>
+	    <label>Instansi</label>
 	    <select id="kdins">
 		    <?php 
 		    $query = $this->db->query('select * from master.m_instansi');

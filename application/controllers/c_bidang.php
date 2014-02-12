@@ -15,7 +15,7 @@ class c_bidang extends CI_Controller {
 		$nama_bid = $this->input->post('namabid');
 		
 		$data = array (
-				"kd_pro" => $kode_pro,
+				"kd_prov" => $kode_pro,
 				"kd_kab" => $kode_kab,
 				"kd_instansi" => $kode_ins,
 				"kd_bidang" => $kode_bid,				

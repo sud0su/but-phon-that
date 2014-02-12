@@ -39,7 +39,7 @@ function tambah(){
 				var kdprov = $('#kdprov').val();
 				var kdkab = $('#kdkab').val();
 				var kdins = $('#kdins').val();
-				var kdbid = $('#kdins').val();
+				var kdbid = $('#kdbid').val();
 				var namabid = $('#namabid').val();
 				if (kdprov == ''){
 					alert('Kode kabupaten belum diisi');
@@ -62,17 +62,17 @@ function tambah(){
 	});
 };
 
-function simpanBidang(kdprov,kdkab,kdins,kdbid, namabid){
+function simpanBidang(kdprov, kdkab, kdins, kdbid, namabid){
 	var skdprov= kdprov;
 	var skdkab= kdkab;
 	var skdins= kdins; 
 	var skdbid= kdbid;
-	var snama= namabid;
+	var snamabid= namabid;
 	
 	$.ajax({
 		type: 'POST',
 		url: BASE_URL+'c_bidang/simpan',
-		data: {kdprov:skdprov, kdkab:skdkab, kdins:skdins, kdbid:skdbid, kdbid:skdbid, namabid:snamabid},
+		data: {kdprov:skdprov, kdkab:skdkab, kdins:skdins, kdbid:skdbid, namabid:snamabid},
 		success: function(data) {
 			alert(data);
 			table_bid();

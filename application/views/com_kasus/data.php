@@ -1,38 +1,33 @@
 <table id="TheTable" border="1" class="ExcelTable2007" width="100%">
 		<tr>
-			<th valign="bottom" width="20px"></th>
-			<th>No Kasus</th>
+			<th class="heading" width="20px"></th>
+			<th>Kode Propinsi</th>
+			<th>Kode Kabupaten</th>
+			<th>Kode Instansi</th>
+			<th>Kode Bidang</th>
+			<th>Semester</th>
+			<th>Tahun</th>
+			<th>Kode Kasus</th>
 			<th>Nama Kasus</th>
-			<th>action</th>
+			<th></th>
 		</tr>
+		
+		<?php $no = '1'; foreach ($kasus->result() as $kas):?>
+		
 		<tr>
-			<td class="heading">1</td>
-			<td valign="bottom">001</td>
-			<td valign="bottom">Kasus Perkara Pemukulan</td>
+			<td class="heading"><?php echo $no++;?></td>
+			<td valign="bottom"><?php echo $kas->kd_prov; ?></td>
+			<td valign="bottom"><?php echo $kas->kd_kab; ?></td>
+			<td valign="bottom"><?php echo $kas->kd_instansi; ?></td>
+			<td valign="bottom"><?php echo $kas->kd_bidang; ?></td>
+			
+			<td valign="bottom"><?php echo $kas->kd_semester; ?></td>
+			
+			<td valign="bottom"><?php echo $kas->tahun; ?></td>
+			<td valign="bottom"><?php echo $kas->kd_kasus; ?></td>
+			<td valign="bottom"><?php echo $kas->nama_kasus; ?></td>
 			<td valign="bottom"></td>
 		</tr>
-		<tr>
-			<td class="heading">1</td>
-			<td valign="bottom">002</td>
-			<td valign="bottom">Kasus Perkara Pemukulan</td>
-			<td valign="bottom"></td>
-		</tr>
-		<tr>
-			<td class="heading">1</td>
-			<td valign="bottom">003</td>
-			<td valign="bottom">Kasus Perkara Pemukulan</td>
-			<td valign="bottom"></td>
-		</tr>
-		<tr>
-			<td class="heading">1</td>
-			<td valign="bottom">004</td>
-			<td valign="bottom">Kasus Perkara Pemukulan</td>
-			<td valign="bottom"></td>
-		</tr>
-		<tr>
-			<td class="heading">1</td>
-			<td valign="bottom">005</td>
-			<td valign="bottom">Kasus Perkara Pemukulan</td>
-			<td valign="bottom"></td>
-		</tr>
+		
+		<?php endforeach;?>
 	</table>
