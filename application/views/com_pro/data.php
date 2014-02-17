@@ -11,7 +11,9 @@
 			<td class="heading"><?php echo $no++;?></td>
 			<td valign="bottom"><?php echo $prov->kd_prov; ?></td>
 			<td valign="bottom"><?php echo $prov->nama_prov; ?></td>
-			<td valign="bottom"></td>
+			<td valign="bottom">
+			<span class="ui-button-icon-primary ui-icon ui-icon-edit"></span>
+			</td>
 		</tr>
 		<?php endforeach;?>
 	</table>

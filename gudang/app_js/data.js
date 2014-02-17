@@ -19,6 +19,9 @@ $(document).ready(function(){
 	$('div#kas').on('click',function(){
 		kasus();
 	});
+	$('div#jns').on('click',function(){
+		jnsdata();
+	});
 
 });
 
@@ -85,6 +88,17 @@ function kasus(){
 	$.ajax({
         type: "POST",
         url : BASE_URL+"c_base/view_kasus",
+        contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+        success: function(data){
+        	 	$('#data').html(data);
+        }
+	});
+};
+
+function jnsdata(){
+	$.ajax({
+        type: "POST",
+        url : BASE_URL+"c_base/view_jnsdata",
         contentType: "application/x-www-form-urlencoded; charset=UTF-8",
         success: function(data){
         	 	$('#data').html(data);

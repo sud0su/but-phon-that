@@ -4,7 +4,7 @@ class c_base extends CI_Controller {
 	
 	function __construct(){
 		parent::__construct();
-		$this->load->model(array('m_provinsi','m_kabupaten','m_instansi','m_bidang','m_kasus','m_semester'));
+		$this->load->model(array('m_provinsi','m_kabupaten','m_instansi','m_bidang','m_kasus','m_semester','m_jenisdata'));
 	}
 	
 	public function index() 
@@ -49,6 +49,12 @@ class c_base extends CI_Controller {
 		$this->load->view('index',$data);
 	}
 	
+	public function view_jnsdata()
+	{
+		$data['component'] = 'com_jnsdata/view';
+		$this->load->view('index',$data);
+	}
+	
 
 	public function table_kab()
 	{
@@ -83,6 +89,13 @@ class c_base extends CI_Controller {
 		$data['kasus'] = $this->m_kasus->getData();
 		$data['semester'] = $this->m_semester->getData();
 		$data['component'] = 'com_kasus/data';
+		$this->load->view('index',$data);
+	}
+	
+	public function table_jnsdata()
+	{
+		$data['jenisdata'] = $this->m_jenisdata->getData();
+		$data['component'] = 'com_jnsdata/data';
 		$this->load->view('index',$data);
 	}
 	

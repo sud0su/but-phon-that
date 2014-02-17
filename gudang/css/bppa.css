@@ -2,21 +2,20 @@
 
 body {
 	width: 1020px;
-	margin: 20px auto;
+	margin: 5px auto;
 	color: #000;
 	font-size: .85em;
 	font-family: "Segoe UI", Tahoma, Arial, Verdana;
 	background-color: #BBD9EE;
-	border: 3px solid transparent;
+	border: 5px solid transparent;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 3px;
-	-moz-box-shadow: 0px 0px 10px #000000;
-	-webkit-box-shadow: 0px 0px 10px #000000;
-	box-shadow: 0px 0px 10px #000000;
-	opacity: 0.94;
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 94);
-	filter: alpha(opacity = 94);
+	-moz-box-shadow: 0px 0px 5px #000000;
+	-webkit-box-shadow: 0px 0px 5px #000000;
+	box-shadow: 0px 0px 5px #000000;
+		-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 94);
+	filter: alpha(opacity = 50);
 
 }
 
@@ -24,8 +23,10 @@ body {
 #footer {
 	float:left;
 	width:100%;
-	background:url(../gambar/bg-footer.gif) no-repeat;
-	height:15px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#fff;
 	}
 
 #loading {
