@@ -1,141 +1,155 @@
 @CHARSET "ISO-8859-1";
 
 body {
-	width: 1020px;
-	margin: 5px auto;
-	color: #000;
-	font-size: .85em;
-	font-family: "Segoe UI", Tahoma, Arial, Verdana;
-	background-color: #BBD9EE;
-	border: 5px solid transparent;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 3px;
-	-moz-box-shadow: 0px 0px 5px #000000;
-	-webkit-box-shadow: 0px 0px 5px #000000;
-	box-shadow: 0px 0px 5px #000000;
-		-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 94);
-	filter: alpha(opacity = 50);
+    width: 1020px;
+    margin: 5px auto;
+    color: #000;
+    font-size: .85em;
+    font-family: "Segoe UI", Tahoma, Arial, Verdana;
+    background-color: #BBD9EE;
 
+
+}
+.ui-menu { width: 150px; font-size: 12px;}
+
+/*header*/
+.header{
+    background-color: #cccccc;
+    margin-bottom: 3px;
+}
+
+.titleApp {
+    color: #999999;
+    font-size: 44px;
+    padding: 5px;
+}
+
+.titleApp img {
+    width:40px;
+    height:40px;
 }
 
 /* footer */
-#footer {
-	float:left;
-	width:100%;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	background-color:#fff;
-	}
+.footer{
+    background-color: #cccccc;
+    margin-bottom: 3px;
+    padding: 10px;
+}
+
+.copy {
+    color: #999999;
+    font-size: 14px;
+    text-align: center;
+}
 
 #loading {
-	background:url(../gambar/loading.gif) no-repeat center center;
-	height: 100%;
-	width: 100%;
-	background-color: black;
-	opacity: 0.3;
+    background:url(../gambar/loading.gif) no-repeat center center;
+/*    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.3;
+*/
 }
 
-.column {
-	width: 100%;
-	
+#column {
+    width: 100%;
+    height: 70%;
 }
- 
+
 .column-left {
-	float: left;
-	width: 230px;
+    float: left;
+    width: 230px;
 }
 
 .content {
-	border: 1px solid #B6B6B6;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-	background-color: #eee;
-	height: 70%;
-	padding: 5px;
+    border: 1px solid #B6B6B6;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #eee;
+    /*height: 70%;*/
+    padding: 5px;
 }
 
 .column-right { 
-	float: left;
-	width: 780px;
-	margin-left: 10px;
+    float: left;
+    width: 788px;
+    margin-left: 2px;
 }
 
 .data-content {
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-	border: 1px solid #C8BFC4;
-	background-color:#fff;
-	padding:10px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #C8BFC4;
+    background-color:#fff;
+    padding:10px;
 }
 
 .menu{
-	width: 150px;
-	margin-bottom: 5px;
-	text-align: left;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: left;
 }
 
 /*------button filter------*/
 .filter {
-	margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .box-filter {
-	font-weight: lighter;
-	float: left;
-	padding-top: 5px;
+    font-weight: lighter;
+    float: left;
+    padding-top: 5px;
 }
 
 .label {
-	padding-top:8px;
-	width: 80px;
-	float: left;
+    padding-top:8px;
+    width: 80px;
+    float: left;
 }
 
 #chart {
-	float: right;
-	margin-top: -44px;
+    float: right;
+    margin-top: -44px;
 }
 
 #cetak {
-	float: right;
-	margin-top: -44px;
+    float: right;
+    margin-top: -44px;
 }
 
 .ui-button .ui-button-text {
-	display: block;
-	line-height: 0.9em;
-	font-size: 12px;
-	font-weight: bold;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
-	text-align: left;
+    display: block;
+    line-height: 0.9em;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+    text-align: left;
 }
 
 .ui-button-text-only .ui-button-text {
-	padding: .3em 1em;
+    padding: .3em 1em;
 }
 
 /*------tabs------*/
 .ui-tabs .ui-tabs-nav {
-	padding-top: 3px;
-	background: #ededed url(aristo/images/bg_fallback.png) 0 0 repeat-x;
-	background: -moz-linear-gradient(top, #ededed 0%, #c4c4c4 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ededed),
-		color-stop(100%, #c4c4c4));
-	background: -webkit-linear-gradient(top, #ededed 0%, #c4c4c4 100%);
-	background: -o-linear-gradient(top, #ededed 0%, #c4c4c4 100%);
-	background: -ms-linear-gradient(top, #ededed 0%, #c4c4c4 100%);
-	background: linear-gradient(top, #ededed 0%, #c4c4c4 100%);
-	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
-	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
-	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+    padding-top: 3px;
+    background: #ededed url(aristo/images/bg_fallback.png) 0 0 repeat-x;
+    background: -moz-linear-gradient(top, #ededed 0%, #c4c4c4 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ededed),
+        color-stop(100%, #c4c4c4));
+    background: -webkit-linear-gradient(top, #ededed 0%, #c4c4c4 100%);
+    background: -o-linear-gradient(top, #ededed 0%, #c4c4c4 100%);
+    background: -ms-linear-gradient(top, #ededed 0%, #c4c4c4 100%);
+    background: linear-gradient(top, #ededed 0%, #c4c4c4 100%);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
 }
 
 .ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default {
-	border: 1px solid #B6B6B6;
+    border: 1px solid #B6B6B6;
 }
 
 label {
@@ -155,4 +169,86 @@ select {
     background-color: #E7E7E7;        
 }
 
-/*---form---*/
+/*---menu---*/
+#accordian {
+    margin-top: -10px;
+}
+
+#accordian ul{
+    list-style: none;
+    margin-left: -40px;
+}
+
+#accordian h3 {
+    font-size: 12px;
+    line-height: 34px;
+    padding: 0 10px;
+    cursor: pointer;
+    margin: 0;
+    border-bottom: 1px solid #B6B6B6;
+
+    background: #ededed url(aristo/images/bg_fallback.png) 0 0 repeat-x;
+    background: -moz-linear-gradient(top, #ededed 0%, #c4c4c4 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ededed),
+        color-stop(100%, #c4c4c4));
+    background: -webkit-linear-gradient(top, #ededed 0%, #c4c4c4 100%);
+    background: -o-linear-gradient(top, #ededed 0%, #c4c4c4 100%);
+    background: -ms-linear-gradient(top, #ededed 0%, #c4c4c4 100%);
+    background: linear-gradient(top, #ededed 0%, #c4c4c4 100%);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+}
+
+#accordian a{
+    text-decoration: none;
+    color: #4F4F4F;
+}
+
+#accordian h3 span {
+    font-size: 16px;
+}
+
+#accordian li {
+    list-style-type: none;
+}
+
+#accordian ul ul{
+    background-color: #fff;
+    padding:5px 5px;
+    margin-left: 0px;
+}
+
+#accordian ul ul li a {
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 27px;
+    display: block;
+    padding: 0 5px;
+    /*transition for smooth hover animation*/
+    transition: all 0.15s;
+    border-bottom: 1px solid #B6B6B6;
+}
+
+#accordian ul ul li a:hover {
+    border-left: 2px solid #B6B6B6;
+
+    background: #ededed url(aristo/images/bg_fallback.png) 0 0 repeat-x;
+    background: -moz-linear-gradient(top, #ededed 0%, #c4c4c4 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ededed),
+        color-stop(100%, #c4c4c4));
+    background: -webkit-linear-gradient(top, #ededed 0%, #c4c4c4 100%);
+    background: -o-linear-gradient(top, #ededed 0%, #c4c4c4 100%);
+    background: -ms-linear-gradient(top, #ededed 0%, #c4c4c4 100%);
+    background: linear-gradient(top, #ededed 0%, #c4c4c4 100%);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+}
+
+#accordian ul ul {
+    display: none;
+}
+#accordian li.active ul {
+    display: block;
+}
