@@ -10,11 +10,11 @@
 	<div id="tambahKasus" style="display:none;" class="dialog_window">
 	    <label>Provinsi</label>
 	    <select id="kdprov">
+	    	<option value="">- Pilih -</option>
 		    <?php 
 		    $query = $this->db->query('select * from master.m_provinsi');
 		    foreach ($query->result() as $dt){
 		    ?>
-		    	<option value="">- Pilih -</option>
 		    	<option value="<?php echo $dt->kd_prov ?>"><?php echo $dt->nama_prov ?></option>
 		    <?php } ?>
 	    </select>
@@ -22,11 +22,12 @@
 	    
 	    <label>Kabupaten</label>
 	    <select id="kdkab">
+	    	<option value="">- Pilih -</option>
 		    <?php 
 		    $query = $this->db->query('select * from master.m_kabupaten');
 		    foreach ($query->result() as $dt){
 		    ?>
-		    	<option value="">- Pilih -</option>
+		    	
 		    	<option value="<?php echo $dt->kd_kab ?>"><?php echo $dt->nama_kab ?></option>
 		    <?php } ?>
 	    </select>
@@ -34,11 +35,11 @@
 	    
 	    <label>Instansi</label>
 	    <select id="kdins">
+	    	<option value="">- Pilih -</option>
 		    <?php 
 		    $query = $this->db->query('select * from master.m_instansi');
 		    foreach ($query->result() as $dt){
 		    ?>
-		    	<option value="">- Pilih -</option>
 		    	<option value="<?php echo $dt->kd_instansi ?>"><?php echo $dt->nama_instansi ?></option>
 		    <?php } ?>
 	    </select>
@@ -46,11 +47,11 @@
 	    
 	    <label>Bidang</label>
 	    <select id="kdbid">
+	    	<option value="">- Pilih -</option>
 		    <?php 
 		    $query = $this->db->query('select * from master.m_bidang');
 		    foreach ($query->result() as $dt){
 		    ?>
-		    	<option value="">- Pilih -</option>
 		    	<option value="<?php echo $dt->kd_bidang ?>"><?php echo $dt->nama_bidang ?></option>
 		    <?php } ?>
 	    </select>
