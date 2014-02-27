@@ -125,5 +125,5 @@ ddaccordion.init({
 		</div>
 
 	</div>
-	<div class="down_footer"></div>
+<!-- 	<div class="down_footer"></div> -->
 </div>

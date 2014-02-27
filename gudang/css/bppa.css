@@ -62,7 +62,7 @@ h3 {
 
 #main_container {
 	margin: 0 auto;
-	width: 900px;
+	width: 1124px;
 	padding: 0px 0 0px 0;
 }
 
@@ -89,17 +89,17 @@ h3 {
 
 .logo {
 	float: left;
-	padding: 35px 0 0 0;
+	padding: 10px 0 0 0;
 }
 
 .header {
-	width: 900px;
-	height: 100px;
+	width: 1124px;
+	height: 60px;
 }
 
 .up_header {
 	margin: 0 auto;
-	width: 900px;
+	width: 1124px;
 	height: 30px;
 	-webkit-border-radius: 10px 10px 0px 0px;
 	-moz-border-radius: 10px 10px 0px 0px;
@@ -112,7 +112,7 @@ h3 {
 }
 
 .footer {
-	width: 900px;
+	width: 1124px;
 	height: 87px;
 	background-color: #60CDEB;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#4FA9C2),
@@ -121,7 +121,7 @@ h3 {
 
 .down_footer {
 	margin: 0 auto;
-	width: 900px;
+	width: 1124px;
 	height: 30px;
 	margin-top: -110;
 	-webkit-border-radius: 0px 0px 10px 10px;
@@ -201,7 +201,7 @@ h3 {
 
 .main_content {
 	margin: 0 auto;
-	width: 900px;
+	width: 1124px;
 	height: auto;
 	padding: 0px 0 50px 0;
 	background-color: #fff;
