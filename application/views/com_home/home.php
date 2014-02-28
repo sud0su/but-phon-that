@@ -37,7 +37,7 @@ ddaccordion.init({
 			<div class="left_content">
 
 				<div class="sidebarmenu">
-					<a class="button_menu ui-icon-min" href="#">Home</a> 
+					<a class="button_menu ui-icon-min" href="">Home</a> 
 					<a class="button_menu submenuheader ui-icon-plus" href="">Data Master</a>
 					<div class="submenu">
 						<ul>
