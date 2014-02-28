@@ -98,17 +98,9 @@ h3 {
 }
 
 .up_header {
-	margin: 0 auto;
 	width: 1124px;
-	height: 30px;
-	-webkit-border-radius: 10px 10px 0px 0px;
-	-moz-border-radius: 10px 10px 0px 0px;
-	border-radius: 10px 10px 0px 0px;
+	height: 3px;
 	background-color: #49c0f0;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#49c0f0),
-		to(#2CAFE3));
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,
-		startColorstr=#49c0f0, endColorstr=#2CAFE3);
 }
 
 .footer {
@@ -120,16 +112,10 @@ h3 {
 }
 
 .down_footer {
-	margin: 0 auto;
 	width: 1124px;
-	height: 30px;
-	margin-top: -110;
-	-webkit-border-radius: 0px 0px 10px 10px;
-	-moz-border-radius: 0px 0px 10px 10px;
-	border-radius: 0px 0px 10px 10px;
+	height: 3px;
+	margin-top: -90;
 	background-color: #49c0f0;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF),
-		to(#FFFFFF));
 }
 
 .left_footer {
@@ -149,6 +135,7 @@ h3 {
 	padding: 25px 10px 0 0;
 }
 
+/* Start Sidebar */
 .sidebarmenu {
 	margin: 0px 0;
 	padding: 0;
@@ -188,6 +175,7 @@ h3 {
 	background: #e2f0ff;
 	color: #0e4354;
 }
+/* end Sidebar */
 
 .content {
 	border: 1px solid #B6B6B6;
@@ -367,12 +355,12 @@ h3 {
 	border: none;
 }
 
-.sidebar_box{
+.sidebar_box {
 	width: 195px;
 	margin-top: 10px;
-	border:1px solid #bee1fa; 
+	border: 1px solid #bee1fa;
 	border-radius: 3px;
-	background-color: #ecf8fd; 
+	background-color: #ecf8fd;
 }
 
 .sidebar_box_content {
