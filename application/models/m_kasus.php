@@ -17,4 +17,18 @@ class m_kasus extends CI_Model {
 		return $data;
 	}
 
+        public function kasus($kasus){
+            $data = $this->db->query("select * from master.m_kasus");
+            return $data;
+        }
+        
+        public function cekBidang($bidang){
+            $data = $this->db->query("select * from master.m_bidang where kd_bidang='$bidang'");
+            return $data;
+        }
+        
+        public function cekKasus($kasus){
+            $data = $this->db->query("select * from master.m_kasus where kd_kasus='$kasus'");
+            return $data;
+        }
 }

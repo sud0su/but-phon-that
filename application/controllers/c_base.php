@@ -24,42 +24,18 @@ class c_base extends CI_Controller {
 		$data['component'] = 'com_kab/view';
 		$this->load->view('index',$data);
 	}
-	
-	public function view_pro()
-	{
-		$data['component'] = 'com_pro/view';
-		$this->load->view('index',$data);
-	}
-	
-	public function view_ins()
-	{
-		$data['component'] = 'com_instansi/view';
-		$this->load->view('index',$data);
-	}
-	
-	public function view_bid()
-	{
-		$data['component'] = 'com_bid/view';
-		$this->load->view('index',$data);
-	}
-	
-	public function view_kasus()
-	{
-		$data['component'] = 'com_kasus/view';
-		$this->load->view('index',$data);
-	}
-	
-	public function view_jnsdata()
-	{
-		$data['component'] = 'com_jnsdata/view';
-		$this->load->view('index',$data);
-	}
-	
 
 	public function table_kab()
 	{
 		$data['kabupaten'] = $this->m_kabupaten->getData();
 		$data['component'] = 'com_kab/data';
+		$this->load->view('index',$data);
+	}
+
+
+	public function view_pro()
+	{
+		$data['component'] = 'com_pro/view';
 		$this->load->view('index',$data);
 	}
 
@@ -70,33 +46,49 @@ class c_base extends CI_Controller {
 		$this->load->view('index',$data);
 	}
 
-	public function table_ins()
+	public function view_ins()
+	{
+		$data['component'] = 'com_instansi/view';
+		$this->load->view('index',$data);
+	}
+        public function table_ins()
 	{
 		$data['instansi'] = $this->m_instansi->getData();
 		$data['component'] = 'com_instansi/data';
 		$this->load->view('index',$data);
 	}
 	
+	public function view_bid()
+	{
+		$data['component'] = 'com_bid/view';
+		$this->load->view('index',$data);
+	}
 	public function table_bid()
 	{
 		$data['bidang'] = $this->m_bidang->getData();
 		$data['component'] = 'com_bid/data';
 		$this->load->view('index',$data);
 	}
-	
-	public function table_kasus()
+
+
+
+	public function dataPilih()
 	{
-		$data['kasus'] = $this->m_kasus->getData();
-		$data['semester'] = $this->m_semester->getData();
-		$data['component'] = 'com_kasus/data';
+		$data['component'] = 'com_kasus/view';
+		$this->load->view('index',$data);
+	}
+
+	public function dataAnak()
+	{
+		$data['component'] = 'com_kasus/view';
+		$this->load->view('index',$data);
+	}
+
+	public function dataKelembagaan()
+	{
+		$data['component'] = 'com_kasus/view';
 		$this->load->view('index',$data);
 	}
 	
-	public function table_jnsdata()
-	{
-		$data['jenisdata'] = $this->m_jenisdata->getData();
-		$data['component'] = 'com_jnsdata/data';
-		$this->load->view('index',$data);
-	}
 	
 }

@@ -19,9 +19,19 @@ $(document).ready(function(){
     $('a#kas').on('click',function(){
         kasus();
     });
-    $('a#jns').on('click',function(){
-        jnsdata();
+
+//kasus//
+    $('a#dataPilih').on('click',function(){
+        dataPilih();
     });
+
+    $('a#dataAnak').on('click',function(){
+        dataAnak();
+    });
+    $('a#dataKelembagaan').on('click',function(){
+        dataKelembagaan();
+    });
+//endkasus//
 
     $("#accordian h3").click(function(){
         //slide up all the link lists
@@ -94,10 +104,11 @@ function bidang(){
     });
 };
 
-function kasus(){
+
+function dataPilih(){
     $.ajax({
         type: "POST",
-        url : BASE_URL+"c_base/view_kasus",
+        url : BASE_URL+"c_base/dataPilih",
         contentType: "application/x-www-form-urlencoded; charset=UTF-8",
         success: function(data){
             $('#data').html(data);
@@ -105,10 +116,22 @@ function kasus(){
     });
 };
 
-function jnsdata(){
+
+function dataAnak(){
     $.ajax({
         type: "POST",
-        url : BASE_URL+"c_base/view_jnsdata",
+        url : BASE_URL+"c_base/dataAnak",
+        contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+        success: function(data){
+            $('#data').html(data);
+        }
+    });
+};
+
+function dataKelembagaan(){
+    $.ajax({
+        type: "POST",
+        url : BASE_URL+"c_base/dataKelembagaan",
         contentType: "application/x-www-form-urlencoded; charset=UTF-8",
         success: function(data){
             $('#data').html(data);

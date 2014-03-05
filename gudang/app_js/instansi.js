@@ -40,13 +40,13 @@ function tambah(){
 				var kdkab = $('#kdkab').val();
 				var kdins = $('#kdins').val();
 				var namains = $('#namains').val();
-				if (kdprov == ''){
+				if (kdprov === ''){
 					alert('Kode kabupaten belum diisi');
-				} else if(kdkab == ''){
+				} else if(kdkab === ''){
 					alert ('Kode Kabupaten belum diisi');
-				} else if(kdins == ''){
+				} else if(kdins === ''){
 					alert ('Kode Instansi belum diisi');
-				} else if(namains == ''){
+				} else if(namains === ''){
 					alert ('Nama Instansi belum diisi');
 				} else {
 					simpanInstansi(kdprov, kdkab, kdins, namains);

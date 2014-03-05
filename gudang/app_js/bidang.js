@@ -43,13 +43,13 @@ function tambah(){
 				var namabid = $('#namabid').val();
 				if (kdprov == ''){
 					alert('Kode kabupaten belum diisi');
-				} else if(kdkab == ''){
+				} else if(kdkab === ''){
 					alert ('Kode Kabupaten belum diisi');
-				} else if(kdins == ''){
+				} else if(kdins === ''){
 					alert ('Kode Instansi belum diisi');
-				} else if(kdbid == ''){
+				} else if(kdbid === ''){
 					alert ('Kode BIdang belum diisi');
-				} else if(namabid == ''){
+				} else if(namabid === ''){
 					alert ('Nama Bidang belum diisi');
 				} else {
 					simpanBidang(kdprov, kdkab, kdins, kdbid, namabid);

@@ -4,12 +4,80 @@ $(document).on('ready',function(){
 	$('button.tambah').on('click',function(){
 		tambah();
 	});
+
+	$('button#AddCol').on('click',function(){
+            $('.tg > tbody:last').append('<tr>'+
+            '<td class="colisi">'+
+                '<select>'+
+                    '<option>Penderita HIV</option>'+
+                    '<option>Penderita HIV</option>'+
+                    '<option>Penderita HIV</option>'+
+                    '<option>Penderita HIV</option>'+
+                '</select>'+
+            '</td>'+
+            '<td class="colisi">'+
+                '<input type="text" id="hiv">'+
+            '</td>'+
+            '<td class="colisi">'+
+                '<input type="text" id="hiv">'+
+            '</td>'+
+            '<td class="colisi">'+
+                '<input type="text" id="hiv">'+
+            '</td>'+
+            '<td class="colisi">'+
+                '<input type="text" id="hiv">'+
+            '</td>'+
+            '<td class="colisi">'+
+                '<input type="text" id="hiv">'+
+            '</td>'+
+            '<td class="colisi">'+
+                '<input type="text" id="hiv">'+
+            '</td>'+
+            '<td class="colisi">'+
+                '<input type="text" id="hiv" style="width:200px;">'+
+            '</td>'+
+        '</tr>');
+	});
+
+        $('button#hpsCol').on('click',function(){
+            $('.tg tr:last').remove();
+	});
+
+        $('#bidang').on('change',function(){
+            var bidang = $(this).val();
+            kasus(bidang);
+        });
 	
+    $('.date-picker-year').datepicker({
+        changeYear: true,
+        showButtonPanel: true,
+        dateFormat: 'yy',
+        onClose: function(dateText, inst) {
+            var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
+            $(this).datepicker('setDate', new Date(year, 1));
+        }
+    });
+    $(".date-picker-year").focus(function() {
+        $(".ui-datepicker-month").hide();
+    });
 });
 
 $(window).bind("load", function() {
     $('#loading').fadeOut(2000);
 });
+
+function kasus(bidang){
+        var bidang = bidang;
+	$.ajax({
+        type: "POST",
+        url : BASE_URL+"c_kasus/kasus",
+        data : {bidang:bidang},
+        contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+        success: function(data){
+            $('.optKasus').html(data);
+        }
+	});
+}
 
 function table_kasus(){
 	$.ajax({
@@ -23,72 +91,63 @@ function table_kasus(){
 }
 
 function tambah(){
+        var bid= $('#bidang').val();
+        var kas= $('#kasus').val();
+        var sme= $('#smester').val();
+        var thn= $('#txtYear').val();
+        $.ajax({
+            type: "POST",
+            url : BASE_URL+"c_kasus/cekBidang",
+            data : {bidang:bid},
+            contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+            success: function(data){
+                $('.ketBid').html(data);
+            }
+	});
+        $.ajax({
+            type: "POST",
+            url : BASE_URL+"c_kasus/cekKasus",
+            data : {kasus:kas},
+            contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+            success: function(data){
+                $('.ketKas').html(data);
+            }
+	});
+        
+        if (sme === '1'){
+            $('.ketSme').text('Ganjil');
+        } else {
+            $('.ketSme').text('Genap');
+        }
+        
+        $('.ketThn').text(thn);
+        
+        $.ajax({
+            type: "POST",
+            url : BASE_URL+"c_kasus/kasusForm",
+            data : {kasus:kas},
+            contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+            success: function(data){
+                $('#form').html(data);
+            }
+	});
+        
 	$('#tambahKasus').dialog({
 		title : 'Form Tambah Data Kasus',
 		width : 'auto',
 		height : 'auto',
 		cache : false,
 		show : 'fade',
-		hide : 'fade',
-	    resizable: false,
-	    draggable : false,
-	    position: ['center',40],
+                hide : 'fade',
+                resizable: false,
+                draggable : false,
+                position:[20,20],
 		modal : true,
 		buttons: {
 			'Simpan': function() {
-				var kdprov = $('#kdprov').val();
-				var kdkab = $('#kdkab').val();
-				var kdins = $('#kdins').val();
-				var kdbid = $('#kdbid').val();
-				var semes = $('#semes').val();
-				var tahun = $('#tahun').val();
-				var kdkas = $('#kdkas').val();				
-				var namakas = $('#namakas').val();
-				
-				if (kdprov == ''){
-					alert('Kode kabupaten belum diisi');
-				} else if(kdkab == ''){
-					alert ('Kode Kabupaten belum diisi');
-				} else if(kdins == ''){
-					alert ('Kode Instansi belum diisi');
-				} else if(kdbid == ''){
-					alert ('Kode Bidang belum diisi');
-				} else if(semes == ''){
-					alert ('Semester belum diisi');
-				} else if(tahun == ''){
-					alert ('Tahun belum diisi');
-				} else if(kdkas == ''){
-					alert ('Kode Kasus belum diisi');
-				} else if(namakas == ''){
-					alert ('Nama Kasus belum diisi');
-				} else {
-					simpanKasus(kdprov, kdkab, kdins, kdbid, semes, tahun, kdkas, namakas);
-					$(this).dialog('close');
-				}
+				//lokasi fungsi simpan
 			},
 			'Close': function() { $(this).dialog('close'); }
-		},
-		resizable: false
-	});
-};
-
-function simpanKasus(kdprov, kdkab, kdins, kdbid, semes, tahun, kdkas, namakas){
-	var skdprov= kdprov;
-	var skdkab= kdkab;
-	var skdins= kdins;
-	var skdbid= kdbid;
-	var ssemes= semes;
-	var stahun= tahun;
-	var skdkas= kdkas;
-	var snamakas= namakas;
-	
-	$.ajax({
-		type: 'POST',
-		url: BASE_URL+'c_kasus/simpan',
-		data: {kdprov:skdprov, kdkab:skdkab, kdins:skdins, kdbid:skdbid, semes:ssemes, tahun:stahun, kdkas:skdkas, namakas:snamakas},
-		success: function(data) {
-			alert(data);
-			table_kasus();
 		}
-	})
+	});
 };

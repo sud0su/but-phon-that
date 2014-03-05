@@ -34,4 +34,40 @@ class c_kasus extends CI_Controller {
 		}
 	}
 
+        public function kasus(){
+            $kasus = $this->input->post('bidang');
+            $dataKasus = $this->m_kasus->kasus($kasus);
+            foreach ($dataKasus->result() as $ks){
+                echo '<option value='.$ks->kd_kasus.'>'.$ks->nama_kasus.'</option>';
+            }
+            
+        }
+        
+        public function cekBidang(){
+            $bidang = $this->input->post('bidang');
+            $dataBidang = $this->m_kasus->cekBidang($bidang);
+            foreach ($dataBidang->result() as $db){
+                echo $db->nama_bidang;
+            }
+            
+        }
+        
+        public function cekKasus(){
+            $kasus = $this->input->post('kasus');
+            $cdataKasus = $this->m_kasus->cekKasus($kasus);
+            foreach ($cdataKasus->result() as $cks){
+                echo $cks->nama_kasus;
+            }
+            
+        }
+        
+        public function kasusForm(){
+            $kasus = $this->input->post('kasus');
+            $form = $this->m_kasus->cekKasus($kasus);
+            foreach ($form->result() as $fm){
+                //echo $cks->nama_kasus;
+                echo $this->load->view('mod_kasus/'.$fm->kd_kasus);
+            }
+        }
+
 }

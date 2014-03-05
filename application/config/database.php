@@ -50,8 +50,8 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'postgres';
-//$db['default']['port']= 5432;
-$db['default']['password'] = 'rzqbuchek';
+$db['default']['port']= 5433;
+$db['default']['password'] = '12345';
 $db['default']['database'] = 'si_kekerasan';
 $db['default']['dbdriver'] = 'postgre';
 $db['default']['dbprefix'] = '';
