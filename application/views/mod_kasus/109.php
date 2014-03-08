@@ -30,12 +30,6 @@ $(document).ready(function(){
         		'<input type="text" id="hiv">'+
     		'</td>'+
     		'<td class="colisi">'+
-        		'<input type="text" id="hiv">'+
-    		'</td>'+
-    		'<td class="colisi">'+
-    			'<input type="text" id="hiv">'+
-			'</td>'+
-            '<td class="colisi">'+
                 '<input type="text" id="hiv" style="width:200px;">'+
             '</td>'+
         '</tr>');
@@ -48,15 +42,15 @@ $(document).ready(function(){
 
 <table class="tg">
     <tr>
-        <th class="colhead" rowspan="2" width="100">Wilayah<br></th>
-        <th class="colhead" colspan="2" width="70">Jaksa<br></th>
-        <th class="colhead" colspan="2" width="70">Hakim<br></th>
-        <th class="colhead" colspan="2" width="70">Polisi<br></th>
-        <th class="colhead" rowspan="2" width="200">Keterangan</th>
+        <th class="colhead" rowspan="4" width="100">Wilayah<br></th>
+        <th class="colhead" colspan="4" width="70">Pelaku Berdasarkan Status Perkerjaan<br></th>
+        <th class="colhead" rowspan="4" width="200">Keterangan</th>
     </tr>
     <tr>
-        <th class="colhead" >L</th>
-        <th class="colhead" >P</th>
+    	<th class="colhead" colspan="2" width="70">Bekerja<br></th>
+        <th class="colhead" colspan="2" width="70">Tidak bekerja<br></th>
+    </tr>
+    <tr>
         <th class="colhead" >L</th>
         <th class="colhead" >P</th>
         <th class="colhead" >L</th>
@@ -71,12 +65,6 @@ $(document).ready(function(){
                 foreach ($kabupaten->result() as $kab) {
                     ?><option value="<?php echo $kab->kd_kab; ?>"><?php echo $kab->nama_kab; ?></option><?php } ?>
             </select>
-        </td>
-        <td class="colisi">
-            <input type="text" id="hiv">
-        </td>
-        <td class="colisi">
-            <input type="text" id="hiv">
         </td>
         <td class="colisi">
             <input type="text" id="hiv">

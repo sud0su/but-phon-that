@@ -18,12 +18,6 @@ $(document).ready(function(){
                 '</select>'+
             '</td>'+
             '<td class="colisi">'+
-                '<input type="text" id="hiv">'+
-            '</td>'+
-            '<td class="colisi">'+
-            	'<input type="text" id="hiv">'+
-        	'</td>'+
-        	'<td class="colisi">'+
             	'<input type="text" id="hiv">'+
         	'</td>'+
         	'<td class="colisi">'+
@@ -35,7 +29,13 @@ $(document).ready(function(){
     		'<td class="colisi">'+
     			'<input type="text" id="hiv">'+
 			'</td>'+
-            '<td class="colisi">'+
+			'<td class="colisi">'+
+    			'<input type="text" id="hiv">'+
+			'</td>'+
+			'<td class="colisi">'+
+				'<input type="text" id="hiv">'+
+			'</td>'+
+			'<td class="colisi">'+
                 '<input type="text" id="hiv" style="width:200px;">'+
             '</td>'+
         '</tr>');
@@ -48,12 +48,14 @@ $(document).ready(function(){
 
 <table class="tg">
     <tr>
-        <th class="colhead" rowspan="2" width="100">Wilayah<br></th>
-        <th class="colhead" colspan="2" width="70">Jaksa<br></th>
-        <th class="colhead" colspan="2" width="70">Hakim<br></th>
-        <th class="colhead" colspan="2" width="70">Polisi<br></th>
-        <th class="colhead" rowspan="2" width="200">Keterangan</th>
+        <th class="colhead" rowspan="3" width="100">Wilayah<br></th>
+        <th class="colhead" colspan="8" width="70">Korban Berdasarkan Umur<br></th>
+        <th class="colhead" rowspan="3" width="200">Keterangan</th>
     </tr>
+    <tr>
+    	<th class="colhead" colspan="2" width="70">Anak<br></th>
+        <th class="colhead" colspan="2" width="70">Remaja<br></th>
+        <th class="colhead" colspan="2" width="70">Dewasa<br></th>
     <tr>
         <th class="colhead" >L</th>
         <th class="colhead" >P</th>

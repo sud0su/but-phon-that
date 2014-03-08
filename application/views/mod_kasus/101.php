@@ -1,3 +1,9 @@
+<style>
+.tg .colisi input {
+width:100%;
+}
+</style>
+
 <script>
 $(document).ready(function(){
 
@@ -18,15 +24,6 @@ $(document).ready(function(){
                 '</select>'+
             '</td>'+
             '<td class="colisi">'+
-                '<input type="text" id="hiv">'+
-            '</td>'+
-            '<td class="colisi">'+
-            	'<input type="text" id="hiv">'+
-        	'</td>'+
-        	'<td class="colisi">'+
-            	'<input type="text" id="hiv">'+
-        	'</td>'+
-        	'<td class="colisi">'+
         		'<input type="text" id="hiv">'+
     		'</td>'+
     		'<td class="colisi">'+
@@ -35,7 +32,40 @@ $(document).ready(function(){
     		'<td class="colisi">'+
     			'<input type="text" id="hiv">'+
 			'</td>'+
-            '<td class="colisi">'+
+			'<td class="colisi">'+
+    			'<input type="text" id="hiv">'+
+			'</td>'+
+			'<td class="colisi">'+
+    			'<input type="text" id="hiv">'+
+			'</td>'+
+			'<td class="colisi">'+
+				'<input type="text" id="hiv">'+
+			'</td>'+
+			'<td class="colisi">'+
+				'<input type="text" id="hiv">'+
+			'</td>'+
+			'<td class="colisi">'+
+				'<input type="text" id="hiv">'+
+			'</td>'+
+			'<td class="colisi">'+
+				'<input type="text" id="hiv">'+
+			'</td>'+
+			'<td class="colisi">'+
+				'<input type="text" id="hiv">'+
+			'</td>'+
+			'<td class="colisi">'+
+				'<input type="text" id="hiv">'+
+			'</td>'+
+			'<td class="colisi">'+
+				'<input type="text" id="hiv">'+
+			'</td>'+
+			'<td class="colisi">'+
+				'<input type="text" id="hiv">'+
+			'</td>'+
+			'<td class="colisi">'+
+				'<input type="text" id="hiv">'+
+			'</td>'+
+			'<td class="colisi">'+
                 '<input type="text" id="hiv" style="width:200px;">'+
             '</td>'+
         '</tr>');
@@ -49,12 +79,24 @@ $(document).ready(function(){
 <table class="tg">
     <tr>
         <th class="colhead" rowspan="2" width="100">Wilayah<br></th>
-        <th class="colhead" colspan="2" width="70">Jaksa<br></th>
-        <th class="colhead" colspan="2" width="70">Hakim<br></th>
-        <th class="colhead" colspan="2" width="70">Polisi<br></th>
+        <th class="colhead" colspan="2" width="70">Keanggotaan Partai Politik<br></th>
+        <th class="colhead" colspan="2" width="70">Pengurus Harian Parpol<br></th>
+        <th class="colhead" colspan="2" width="70">Kaukus Perempuan Politik<br></th>
+        <th class="colhead" colspan="2" width="70">Tim Badan Pertimbangan Jabatan dan Kepangkatan (Baperjakat)<br></th>
+        <th class="colhead" colspan="2" width="70">Badan Permusyarakatan Desa (BPD)<br></th>
+        <th class="colhead" colspan="2" width="70">LKMD<br></th>
+        <th class="colhead" colspan="2" width="70">Serikat Pekerja<br></th>
         <th class="colhead" rowspan="2" width="200">Keterangan</th>
     </tr>
     <tr>
+        <th class="colhead" >L</th>
+        <th class="colhead" >P</th>
+        <th class="colhead" >L</th>
+        <th class="colhead" >P</th>
+        <th class="colhead" >L</th>
+        <th class="colhead" >P</th>
+        <th class="colhead" >L</th>
+        <th class="colhead" >P</th>
         <th class="colhead" >L</th>
         <th class="colhead" >P</th>
         <th class="colhead" >L</th>
@@ -85,6 +127,30 @@ $(document).ready(function(){
             <input type="text" id="hiv">
         </td>
         <td class="colisi">
+            <input type="text" id="hiv">
+        </td>
+        <td class="colisi">
+            <input type="text" id="hiv">
+        </td>
+        <td class="colisi">
+            <input type="text" id="hiv">
+        </td>
+        <td class="colisi">
+            <input type="text" id="hiv">
+        </td>
+        <td class="colisi">
+            <input type="text" id="hiv">
+        </td>
+        <td class="colisi">
+            <input type="text" id="hiv">
+        </td>
+        <td class="colisi">
+            <input type="text" id="hiv">
+        </td>
+        <td class="colisi">
+            <input type="text" id="hiv">
+        </td>
+         <td class="colisi">
             <input type="text" id="hiv">
         </td>
         <td class="colisi">

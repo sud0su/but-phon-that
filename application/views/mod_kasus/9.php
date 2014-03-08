@@ -48,11 +48,15 @@ $(document).ready(function(){
 
 <table class="tg">
     <tr>
-        <th class="colhead" rowspan="2" width="100">Wilayah<br></th>
-        <th class="colhead" colspan="2" width="70">Jaksa<br></th>
+        <th class="colhead" rowspan="4" width="100">Wilayah<br></th>
+        <th class="colhead" colspan="4" width="70">Pelaku<br></th>
+        <th class="colhead" rowspan="4" width="200">Keterangan</th>
+    </tr>
+    <tr>
+    	<th class="colhead" colspan="2" width="70">Tingkat Pendidikan<br></th>
+        <th class="colhead" colspan="2" width="70">Polisi<br></th>
         <th class="colhead" colspan="2" width="70">Hakim<br></th>
         <th class="colhead" colspan="2" width="70">Polisi<br></th>
-        <th class="colhead" rowspan="2" width="200">Keterangan</th>
     </tr>
     <tr>
         <th class="colhead" >L</th>

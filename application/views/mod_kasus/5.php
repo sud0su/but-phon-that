@@ -49,9 +49,9 @@ $(document).ready(function(){
 <table class="tg">
     <tr>
         <th class="colhead" rowspan="2" width="100">Wilayah<br></th>
-        <th class="colhead" colspan="2" width="70">Jaksa<br></th>
-        <th class="colhead" colspan="2" width="70">Hakim<br></th>
-        <th class="colhead" colspan="2" width="70">Polisi<br></th>
+        <th class="colhead" colspan="2" width="70">Penduduk Lanjut Usia (Lansia) Menurut Pendidikan yang di Tamatkan<br></th>
+        <th class="colhead" colspan="2" width="70">Penduduk Lanjut Usia (Lansia) Menurut Aktivitas yang dilakukan<br></th>
+        <th class="colhead" colspan="2" width="70">Penduduk Lanjut Usia (Lansia) Menurut Angka Kesakitan Lansia (Morbiolitas)<br></th>
         <th class="colhead" rowspan="2" width="200">Keterangan</th>
     </tr>
     <tr>
