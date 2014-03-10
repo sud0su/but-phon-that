@@ -21,6 +21,9 @@ $(document).ready(function(){
                 '<input type="text" id="hiv">'+
             '</td>'+
             '<td class="colisi">'+
+                '<input type="text" id="hiv">'+
+            '</td>'+
+            '<td class="colisi">'+
             	'<input type="text" id="hiv">'+
         	'</td>'+
         	'<td class="colisi">'+
